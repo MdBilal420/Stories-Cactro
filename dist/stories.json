@@ -3,36 +3,36 @@
     {
       "id": "1",
       "user": "Travel Adventures",
-      "avatar": "src/assets/story-1.jpg",
-      "image": "src/assets/story-1.jpg",
+      "avatar": "/assets/story-1.jpg",
+      "image": "/assets/story-1.jpg",
       "timestamp": "2 hours ago"
     },
     {
       "id": "2", 
       "user": "City Life",
-      "avatar": "src/assets/story-2.jpg",
-      "image": "src/assets/story-2.jpg",
+      "avatar": "/assets/story-2.jpg",
+      "image": "/assets/story-2.jpg",
       "timestamp": "4 hours ago"
     },
     {
       "id": "3",
       "user": "Coffee Moments",
-      "avatar": "src/assets/story-3.jpg", 
-      "image": "src/assets/story-3.jpg",
+      "avatar": "/assets/story-3.jpg", 
+      "image": "/assets/story-3.jpg",
       "timestamp": "6 hours ago"
     },
     {
       "id": "4",
       "user": "Mountain Explorer",
-      "avatar": "src/assets/story-4.jpg",
-      "image": "src/assets/story-4.jpg", 
+      "avatar": "/assets/story-4.jpg",
+      "image": "/assets/story-4.jpg", 
       "timestamp": "8 hours ago"
     },
     {
       "id": "5",
       "user": "Nature Lover",
-      "avatar": "src/assets/story-5.jpg",
-      "image": "src/assets/story-5.jpg",
+      "avatar": "/assets/story-5.jpg",
+      "image": "/assets/story-5.jpg",
       "timestamp": "10 hours ago"
     }
   ]

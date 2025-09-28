@@ -10,32 +10,26 @@ export const useStories = () => {
     const fetchStories = async () => {
       try {
         setLoading(true);
+        // Updated path to reference the public directory
         const response = await fetch('/stories.json');
         if (!response.ok) {
           throw new Error('Failed to fetch stories');
         }
         const data = await response.json();
         
-        // Import the actual image modules
-        const storiesWithImages = await Promise.all(
-          data.stories.map(async (story: Story) => {
-            try {
-              const imageModule = await import(story.image);
-              return {
-                ...story,
-                image: imageModule.default,
-                avatar: imageModule.default
-              };
-            } catch (err) {
-              console.error(`Failed to load image for story ${story.id}:`, err);
-              return story;
-            }
-          })
-        );
+        // Process stories without trying to import images as modules
+        // Since images are now in the public directory, we can reference them directly
+        const storiesWithImages = data.stories.map((story: Story) => ({
+          ...story,
+          // Convert relative paths to absolute paths for public directory
+          image: story.image.replace('src/', '/'),
+          avatar: story.avatar.replace('src/', '/')
+        }));
         
         setStories(storiesWithImages);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error occurred');
+        console.error('Error loading stories:', err);
       } finally {
         setLoading(false);
       }

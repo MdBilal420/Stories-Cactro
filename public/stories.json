@@ -1,0 +1,39 @@
+{
+  "stories": [
+    {
+      "id": "1",
+      "user": "Travel Adventures",
+      "avatar": "/assets/story-1.jpg",
+      "image": "/assets/story-1.jpg",
+      "timestamp": "2 hours ago"
+    },
+    {
+      "id": "2", 
+      "user": "City Life",
+      "avatar": "/assets/story-2.jpg",
+      "image": "/assets/story-2.jpg",
+      "timestamp": "4 hours ago"
+    },
+    {
+      "id": "3",
+      "user": "Coffee Moments",
+      "avatar": "/assets/story-3.jpg", 
+      "image": "/assets/story-3.jpg",
+      "timestamp": "6 hours ago"
+    },
+    {
+      "id": "4",
+      "user": "Mountain Explorer",
+      "avatar": "/assets/story-4.jpg",
+      "image": "/assets/story-4.jpg", 
+      "timestamp": "8 hours ago"
+    },
+    {
+      "id": "5",
+      "user": "Nature Lover",
+      "avatar": "/assets/story-5.jpg",
+      "image": "/assets/story-5.jpg",
+      "timestamp": "10 hours ago"
+    }
+  ]
+}
